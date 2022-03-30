@@ -11,7 +11,7 @@ public class HW2 {
         System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.amazon.com/");
-        List<WebElement> allLinks = driver.findElements(By.tagName("a"));
+        List<WebElement> allLinks = driver.findElements(By.tagName("a"));//it will automatically return us ArrayList
         System.out.println("Number of links " + allLinks.size());
         for (WebElement link :
                 allLinks) {
