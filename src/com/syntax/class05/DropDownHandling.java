@@ -14,14 +14,14 @@ public class DropDownHandling {
     public static String url = "https://syntaxprojects.com/basic-select-dropdown-demo.php";
 
     public static void main(String[] args) throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get(url);
         WebElement daysDD = driver.findElement(By.id("select-demo"));
         Select select = new Select(daysDD);
 //        select.selectByIndex(3); // indexing starts from 0
 //
-//        Thread.sleep(1000);
+//        Thread.sleep(1000);//for visualization only
 //
 //        select.selectByVisibleText("Thursday");
 //        Thread.sleep(1000);

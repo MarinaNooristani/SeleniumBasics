@@ -13,7 +13,7 @@ public class LocatingElements {
         driver.findElement(By.id("pass")).sendKeys("12345");
         driver.findElement(By.name("login")).click();
         Thread.sleep(2000);
-        //driver.findElement(By.linkText("Forgotten password?")).click();
+       // driver.findElement(By.linkText("Forgotten password?")).click();
         driver.findElement(By.partialLinkText("Forgot")).click();
         driver.quit();
     }

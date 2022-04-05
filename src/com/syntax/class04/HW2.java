@@ -7,6 +7,14 @@ import java.util.List;
 
 public class HW2 {
     public static <list> void main(String[] args) {
+        /**
+         * TC 1: Amazon link count:
+         * Open Chrome browser
+         * Go to “https://www.amazon.com/”
+         * Get all links
+         * Get number of links that has text
+         * Print to console only the links that has text
+         */
 
         System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
         WebDriver driver = new ChromeDriver();

@@ -56,8 +56,7 @@
  select Computers/Tables & Networking
  click on search
  verify the header
- radio buttons you can only select one element we can not unselect
- Checkboxes you can select multiple elements
- dropdown is a menu that gives us the opportunity to select one or multiple options
 
- we first check that our dropdown has select tag
+ radio buttons are circled shape we can only select one element/option and we can not unselect
+ Checkboxes are squared shape we can select multiple elements/options and we can select and unselect
+ for using select class, first we need to make sure that our dropdown has select tag

@@ -4,6 +4,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 public class HW1 {
+    /**
+     * Open Chrome browser
+     * Go to “http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login”
+     * Enter valid username and password (username - Admin, password - Hum@nhrm123)
+     * Click on login button
+     * Then verify Syntax Logo is displayed.
+     */
     public static void main(String[] args) {
         System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
