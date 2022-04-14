@@ -21,11 +21,13 @@ public class AdvancedWindowHandling {
         System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get(url);
+        //1: get window handle of the main page and store it in a variable
         String mainPageHandle = driver.getWindowHandle();
+        //2: locate all the tabs
         WebElement igButton = driver.findElement(By.linkText("Follow On Instagram"));
         WebElement fbButton = driver.findElement(By.linkText("Like us On Facebook"));
         WebElement igAndFbButton = driver.findElement(By.linkText("Follow Instagram & Facebook"));
-
+        //3: since our focus is still on the main page we can click on all tabs one by one
         igButton.click();
         fbButton.click();
         igAndFbButton.click();
@@ -33,9 +35,9 @@ public class AdvancedWindowHandling {
         Set<String> allWindowHandles = driver.getWindowHandles();
         System.out.println(allWindowHandles.size());
         Iterator<String> it = allWindowHandles.iterator();
-        while(it.hasNext()) { //start iterating through the handles
+        while (it.hasNext()) { //start iterating through the handles
             String handle = it.next(); // get the next handle
-            if(!mainPageHandle.equals(handle)) { // set a condition
+            if (!mainPageHandle.equals(handle)) { // set a condition
                 driver.switchTo().window(handle); // switch to a window which is not equal to main page handle
                 //driver.manage().window().maximize();
                 String title = driver.getTitle();
@@ -43,7 +45,7 @@ public class AdvancedWindowHandling {
                 driver.close();
             }
         }
-        driver.switchTo().window(mainPageHandle); // swithing back to parent handle
+        driver.switchTo().window(mainPageHandle); // switching back to parent handle
         igButton.click();
     }
 }

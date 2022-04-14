@@ -22,7 +22,7 @@ public class SimpleWindowHandling {
         WebDriver driver = new ChromeDriver();
         driver.get(url);
         String mainPageHandle = driver.getWindowHandle(); // get window handle for the main page
-        System.out.println(mainPageHandle);
+        System.out.println(mainPageHandle);//to print the id of window
         Thread.sleep(3000);
         WebElement helpLink = driver.findElement(By.linkText("Yardım"));
         helpLink.click();

@@ -65,5 +65,5 @@ close() vs quit()
 -- quit() will quit the whole browser
 
 fullscreen() vs maximize()
--- maximize() will maximize the browser an you will still be able to see the control panel(back and forward, bookmarks)
+-- maximize() will maximize the browser and you will still be able to see the control panel(back and forward, bookmarks)
 and fullscreen() will maximize the whole application

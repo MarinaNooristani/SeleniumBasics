@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
+import java.util.List;
+
 public class HW2 {
     public static String url = "https://www.facebook.com";
 
@@ -36,8 +38,15 @@ public class HW2 {
         Select selectYear = new Select(yearDD);
         selectYear.selectByVisibleText("1989");
         Thread.sleep(1000);
-        WebElement gender = driver.findElement(By.xpath("//label[text() = 'Male']"));
-        gender.click();
+        List<WebElement> gender = driver.findElements(By.xpath("//label[@class = '_58mt']"));
+        for (WebElement g :
+                gender) {
+            String text = g.getText();
+            if (text.equals("Male")) {
+                g.click();
+                break;
+            }
+        }
         Thread.sleep(2000);
         WebElement signUp = driver.findElement(By.name("websubmit"));
         signUp.click();
