@@ -1,0 +1,25 @@
+Selenium Review Class04
+
+<table>
+  <thead>
+    <tr>
+         <th> </th>
+         <th> </th>
+    </tr>
+    <tr>
+          <th> </th>
+          <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+         <td> </td>
+         <td> </td>
+    </tr>
+    <tr>
+          <td> </td>
+          <td> </td>
+    </tr>
+  </tbody>
+</table>
+a table may or may not have a thead tag
